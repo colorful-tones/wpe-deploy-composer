@@ -1,29 +1,31 @@
 #---------------------------
-# Themes
+# WordPress general
 #---------------------------
-/themes/*
+index.php
 
 #---------------------------
-# Plugins
-# Check out WPE's Smart
-# Plugin Manager (SMP)
+# WordPress themes
 #---------------------------
-# Ignore all plugins
-/plugins/*
+/themes/
 
 #---------------------------
-# MU plugins: these are
+# WordPress plugins
+#---------------------------
+/plugins/
+
+#---------------------------
+# WP MU plugins: these are
 # managed by the platform.
 #---------------------------
 /mu-plugins/
 
 #---------------------------
-# Uploads directory
+# WP uploads directory
 #---------------------------
 /uploads/
 
 #---------------------------
-# Upgrade files
+# WP upgrade files
 #---------------------------
 /upgrade/
 
