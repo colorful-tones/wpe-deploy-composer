@@ -1,0 +1,81 @@
+{
+    "name": "wpe/wp-content",
+    "description": "Tutorial to demonstrate how to manage dependencies with Composer and deploy to WP Engine.",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "advanced-custom-fields/advanced-custom-fields-pro",
+                "version": "6.0.5",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%PLUGIN_ACF_KEY}&t={%VERSION}"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "colorful-tones/acf-accordion-block",
+                "version": "1.0.2",
+                "type": "wordpress-plugin",
+                "source": {
+                    "url": "https://github.com/colorful-tones/acf-accordion-block.git",
+                    "type": "git",
+                    "reference": "main"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "wpengine/frost",
+                "version": "0.9.9",
+                "type": "wordpress-theme",
+                "source": {
+                    "url": "https://github.com/wpengine/frost.git",
+                    "type": "git",
+                    "reference": "trunk"
+                }
+            }
+        },
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "colorful-tones/acf-accordion-block": "^1",
+        "composer/installers": "~1.0",
+        "ffraenz/private-composer-installer": "^5.0",
+        "wpackagist-plugin/duplicate-post": "^4.5",
+        "wpackagist-plugin/svg-support": "^2.5.1",
+        "wpackagist-plugin/wordpress-seo": "^19.10",
+        "advanced-custom-fields/advanced-custom-fields-pro": "*",
+        "wpengine/frost": "^0.9.9"
+    },
+    "extra": {
+        "installer-paths": {
+            "plugins/{$name}": [
+                "type:wordpress-plugin"
+            ],
+            "themes/{$name}": [
+                "type:wordpress-theme"
+            ]
+        },
+        "private-composer-installer": {
+            "dotenv-path": ".",
+            "dotenv-name": ".env"
+        }
+    },
+    "license": "GPL-2.0+",
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
