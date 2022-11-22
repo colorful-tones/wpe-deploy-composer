@@ -21,14 +21,14 @@ Thumbs.db
 #     wp-content/uploads/ if a --delete flag is passed while deploying root. Most paths here 
 #     are ingnored in the WPE sample .gitignore per best practice.
 wp-config.php
-wp-content/uploads/
-wp-content/blogs.dir/
-wp-content/upgrade/*
-wp-content/backup-db/*
-wp-content/advanced-cache.php
-wp-content/wp-cache-config.php
-wp-content/cache/*
-wp-content/cache/supercache/*
+uploads/
+blogs.dir/
+upgrade/*
+backup-db/*
+advanced-cache.php
+wp-cache-config.php
+cache/*
+cache/supercache/*
 
 # WP Engine specific files
 # NOTE:
@@ -41,20 +41,31 @@ wp-content/cache/supercache/*
 #   circumstances to have as a reference for debugging purposes.
 .smushit-status
 .gitattributes
-.wpe-devkit/
 .wpengine-conf/
 _wpeprivate
-wp-content/object-cache.php
-wp-content/mu-plugins/mu-plugin.php
-wp-content/mu-plugins/slt-force-strong-passwords.php
-wp-content/mu-plugins/wpengine-security-auditor.php
-wp-content/mu-plugins/stop-long-comments.php
-wp-content/mu-plugins/force-strong-passwords*
-wp-content/mu-plugins/wpengine-common*
-wp-content/mu-plugins/wpe-wp-sign-on-plugin*
-wp-content/mu-plugins/wpe-elasticpress-autosuggest-logger*
-wp-content/mu-plugins/wpe-cache-plugin*
-wp-content/mysql.sql
+object-cache.php
+mu-plugins/mu-plugin.php
+mu-plugins/slt-force-strong-passwords.php
+mu-plugins/wpengine-security-auditor.php
+mu-plugins/stop-long-comments.php
+mu-plugins/force-strong-passwords*
+mu-plugins/wpengine-common*
+mu-plugins/wpe-wp-sign-on-plugin*
+mu-plugins/wpe-elasticpress-autosuggest-logger*
+mu-plugins/wpe-cache-plugin*
+mysql.sql
+index.php
 
 # Local specific
-wp-content/mu-plugins/local-by-flywheel-live-link-helper.php
+mu-plugins/local-by-flywheel-live-link-helper.php
+
+# Excluding config files on server from being deleted
+.env
+.env.*
+
+# Excluding vendor directory to prevent it from deleted each time the site is deployed
+vendor
+
+#Excluding plugins and themes from deleted each time the site is deployed
+plugins/*
+themes/*
