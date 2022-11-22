@@ -1,0 +1,2 @@
+wp-content/plugins/oxygen
+wp-content/themes/astra
