@@ -18,4 +18,4 @@ jobs:
         # Deploy Options
         REMOTE_PATH: "wp-content/"
         FLAGS: -azvr --inplace --delete --exclude=".*" --exclude-from config/exclude.txt
-        SCRIPT: config/post-deploy.sh
+        SCRIPT: wp-content/config/post-deploy.sh
