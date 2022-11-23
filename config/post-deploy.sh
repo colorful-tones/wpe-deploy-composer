@@ -1,1 +1,1 @@
-cd wp-content && composer install --optimize-autoloader --no-dev --no-progress
+cd wp-content && composer install --optimize-autoloader --no-dev --no-progress --prefer-dist
