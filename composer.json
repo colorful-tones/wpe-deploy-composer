@@ -73,7 +73,8 @@
     "license": "GPL-2.0+",
     "config": {
         "allow-plugins": {
-            "composer/installers": true
+            "composer/installers": true,
+            "ffraenz/private-composer-installer": true
         },
         "preferred-install": "dist",
         "sort-packages": true
