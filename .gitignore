@@ -7,13 +7,13 @@
 # WordPress themes
 #---------------------------
 /themes/*
-!/themes/qorp-theme
+!/themes/custom-theme
 
 #---------------------------
 # WordPress plugins
 #---------------------------
 /plugins/*
-!/plugins/qorp-plugin
+!/plugins/custom-plugin
 
 #---------------------------
 # WP MU plugins: these are
