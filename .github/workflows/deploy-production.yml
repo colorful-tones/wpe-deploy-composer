@@ -17,5 +17,5 @@ jobs:
         WPE_ENV: qorp
         # Deploy Options
         REMOTE_PATH: "wp-content/"
-        FLAGS: -azvr --inplace --delete --exclude=".*" --exclude-from config/exclude.txt
+        FLAGS: -azvr --inplace --delete --include-from config/include.txt --exclude=".*" --exclude-from config/exclude.txt
         SCRIPT: wp-content/config/post-deploy.sh
