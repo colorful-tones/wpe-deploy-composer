@@ -66,6 +66,6 @@ mu-plugins/local-by-flywheel-live-link-helper.php
 # Excluding vendor directory to prevent it from deleted each time the site is deployed
 vendor
 
-#Excluding plugins and themes from deleted each time the site is deployed
+# Excluding plugins and themes from deleted each time the site is deployed
 plugins/*
 themes/*
