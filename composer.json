@@ -22,8 +22,8 @@
                 "version": "1.0.2",
                 "type": "wordpress-plugin",
                 "source": {
-                    "url": "https://github.com/colorful-tones/acf-accordion-block.git",
-                    "type": "git",
+                    "url": "git@github.com:colorful-tones/accordion-block.git",
+                    "type": "vcs",
                     "reference": "main"
                 }
             }
@@ -35,8 +35,8 @@
                 "version": "0.9.9",
                 "type": "wordpress-theme",
                 "source": {
-                    "url": "https://github.com/wpengine/frost.git",
-                    "type": "git",
+                    "url": "git@github.com:wpengine/frost.git",
+                    "type": "vcs",
                     "reference": "trunk"
                 }
             }

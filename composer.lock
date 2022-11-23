@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bcf34b48e26658784461d3ec4b27518",
+    "content-hash": "9159be2848e63be43dee5eea90f11c1d",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -19,8 +19,8 @@
             "name": "colorful-tones/acf-accordion-block",
             "version": "1.0.2",
             "source": {
-                "type": "git",
-                "url": "https://github.com/colorful-tones/acf-accordion-block.git",
+                "type": "vcs",
+                "url": "git@github.com:colorful-tones/accordion-block.git",
                 "reference": "main"
             },
             "type": "wordpress-plugin"
@@ -770,8 +770,8 @@
             "name": "wpengine/frost",
             "version": "0.9.9",
             "source": {
-                "type": "git",
-                "url": "https://github.com/wpengine/frost.git",
+                "type": "vcs",
+                "url": "git@github.com:wpengine/frost.git",
                 "reference": "trunk"
             },
             "type": "wordpress-theme"
