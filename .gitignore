@@ -1,17 +1,19 @@
 #---------------------------
 # WordPress general
 #---------------------------
-index.php
+/index.php
 
 #---------------------------
 # WordPress themes
 #---------------------------
-/themes/
+/themes/*
+!/themes/qorp-theme
 
 #---------------------------
 # WordPress plugins
 #---------------------------
-/plugins/
+/plugins/*
+!/plugins/qorp-plugin
 
 #---------------------------
 # WP MU plugins: these are
