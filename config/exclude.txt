@@ -1,5 +1,4 @@
-# WP Engine already excludes certain platform-specific directories:
-# https://github.com/wpengine/github-action-wpe-site-deploy/blob/main/exclude.txt
+# WP Engine already excludes certain platform-specific directories
 
 # Excluding config files on server from being deleted
 .env
