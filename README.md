@@ -1,6 +1,6 @@
 A demo repo to show one way to manage dependencies with Composer and deploy to WP Engine.
 
-Tutorial: [Coming Soon](#)
+Tutorial: [Using Composer to manage plugins and deploy to WP Engine](https://wpengine.com/builders/using-composer-manage-plugins-deploy/)
 
 The root of this repo represents the `wp-content/` directory of your WordPress install. Right now, all plugins are managed with Composer. This does not _always_ have to be the case, and you could exclude a custom plugin or two in the `.gitignore`.
 
